@@ -1,12 +1,24 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 
 int main() {
-    int pos;
+    double PI = M_PI;
 
-    scanf("%d", &pos);
+    double angle;
 
-    int res = pos / 3 % 10;
-    printf("%d", res);
+    scanf("%lf", &angle);
 
+    angle -= PI / 2;
+
+    double hour_pos = ((2 * PI - angle) / (PI / 6));
+    int hours = (int)((2 * PI - angle) / (PI / 6)) % 12;
+    double minute_pos_by_hour = hour_pos - (int)hour_pos;
+    int minutes = (int)(60 * minute_pos_by_hour);
+
+    double minute_pos = (((2 * PI) * minute_pos_by_hour) * -1) + (2 * PI) + (PI / 2);
+
+    printf("%d : ", hours);
+    printf("%d \n", minutes);
+    printf("%lf \n", minute_pos);
 }
