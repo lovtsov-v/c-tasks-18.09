@@ -21,4 +21,6 @@ int main() {
     printf("%d : ", hours);
     printf("%d \n", minutes);
     printf("%lf \n", minute_pos);
+
+    return 0;
 }

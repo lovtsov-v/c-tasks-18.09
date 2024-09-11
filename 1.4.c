@@ -5,7 +5,9 @@ int main() {
 
     scanf("%d", &pos);
 
-    int res = pos / 3 % 10;
+    int res = pos / 3 % 10; // NUMS multiplies of 3
+
     printf("%d", res);
 
+    return 0;
 }
