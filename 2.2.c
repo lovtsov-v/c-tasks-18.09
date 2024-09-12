@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include <locale.h>
 
 int main() {
-    // setlocale(0, "ru_RU");
 
     int xa1, ya1, xa2, ya2;
     int xb1, yb1, xb2, yb2;
